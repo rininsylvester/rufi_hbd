@@ -730,14 +730,14 @@
       showQuote(quoteIdx);
     },4000);
     // Countdown Timer (next anniversary: 2025-12-12)
-    function updateCountdown() {
+    /*function updateCountdown() {
       const target = new Date('2025-12-12T00:00:00');
       const now = new Date();
       let diff = target-now;
       if(diff<0){document.getElementById('countdownTimer').textContent = "Happy Anniversary!";return;}
       let days = Math.floor(diff/86400000), hrs=Math.floor((diff%86400000)/3600000), mins=Math.floor((diff%3600000)/60000), secs=Math.floor((diff%60000)/1000);
-      document.getElementById('countdownTimer').textContent = `Next Anniversary in: ${days}d ${hrs}h ${mins}m ${secs}s`;
-    }
+      document.getElementById('countdownTimer').textContent = `Next Birthday in: ${days}d ${hrs}h ${mins}m ${secs}s`;
+    }*/
     updateCountdown();
     setInterval(updateCountdown,1000);
     // Envelope Reveal
